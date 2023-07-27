@@ -1,0 +1,98 @@
+/* style main cart */
+.maincart {
+    border: 2px solid var(--second);
+    border-radius: 20px;
+    padding: 25px;
+    height: 60vh;
+    overflow-y: scroll;
+    margin: 20px;
+}
+
+.maincart>div {
+    display: flex;
+}
+
+.maincart .image {
+    min-width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-size:cover ;
+    background-position: center;
+}
+
+.maincart .details {
+    width: 100%;
+}
+
+
+
+.maincart button {
+    align-self: flex-end;
+    width: fit-content;
+    background-color: rgb(230, 64, 3);
+}
+
+.maincart span {
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+}
+/* end main cart */
+/* start style horizontal line */
+.hr {
+    height: 1px;
+    width: 100%;
+    background-color: antiquewhite;
+    margin: 20px 0;
+}
+
+.hr:last-of-type {
+    display: none;
+}
+/* end style horizontal line */
+/* start cart footer */
+.maincart .cartfooter {
+    display: flex;
+    justify-content: space-between;
+}
+/* end cart footer */
+/* icons style */
+.iconname {
+    position: relative;
+}
+.iconcontainer{
+    position: absolute;
+    right: 0px;
+    top: -25px;
+}
+.iconcontainer p
+{
+background-color: white;
+color: black;
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+font-weight: bold;
+position: absolute;
+bottom: -5px;
+left: 0;
+}
+.Carticon{
+    background-color: var(--second);
+    width: 50px;
+    height: 50px;
+padding: 10px; 
+    border-radius: 50%;
+   
+}
+/* end icons style */
+@media (max-width:730px) {
+    .maincart {
+        height: 40vh;
+        padding: 20px;
+    }
+}
